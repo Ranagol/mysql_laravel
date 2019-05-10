@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/testing', 'CustomersController@index');
+
+Route::post('/insert', 'CustomersController@store');
+
+Route::patch('/update', 'CustomersController@update');
+
+Route::delete('/delete', 'CustomersController@destroy');
